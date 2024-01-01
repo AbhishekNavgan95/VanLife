@@ -7,14 +7,16 @@ const Navbar = () => {
       <div className="max-w-[1000px] px-4 mx-auto flex items-center justify-between py-6">
         <div className="text-4xl font-bold text-gray-700">
           <Link to="/">
-            <h1>VanLife</h1>
+            <h1 className="text-orange-900">VanLife</h1>
           </Link>
         </div>
         <div className="flex gap-4 text-xl">
           <Link to="/about">
             <h2 className=" text-black hover:text-gray-700 font-semibold">About</h2>
           </Link>
-          <h2 className=" text-black hover:text-gray-700 font-semibold">Vans</h2>
+          <Link to="/vans">
+            <h2 className=" text-black hover:text-gray-700 font-semibold">Vans</h2>
+          </Link>
         </div>
       </div>
     </div>

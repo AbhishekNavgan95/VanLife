@@ -6,14 +6,14 @@ const About = () => {
       <div>
         <img
           className="w-full md:h-[50vh] object-cover"
-          src="https://images.unsplash.com/photo-1591706515036-cb0f48dc5e62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHZhbnxlbnwwfHwwfHx8MA%3D%3D"
+          src="https://images.unsplash.com/photo-1464851707681-f9d5fdaccea8?q=80&w=933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
         />
       </div>
       <div className="max-w-[1000px] mx-auto px-4">
         <div className="">
           <div>
-            <h1 className="text-5xl font-bold lg:w-[70%] my-10 ">
+            <h1 className="text-5xl text-orange-900 font-bold lg:w-[70%] my-5 ">
               Dont squeeze in a sedan when you could relax in a van.
             </h1>
           </div>
