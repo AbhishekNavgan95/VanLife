@@ -8,7 +8,6 @@ const Van = () => {
   async function fetchCardData() {
     const res = await fetch(`/api/vans/${params.id}`);
     const data = await res.json();
-    console.log(data.vans);
     seVanData(data.vans);
   }
 
@@ -48,7 +47,9 @@ const Van = () => {
             </h4>
           </div>
           <div className="flex flex-row-reverse justify-center md:justify-start items-center">
-            <button className="bg-orange-500 text-white rounded-full px-5 py-2 font-bold hover:bg-orange-800 transiton-color duration-300">Rent this van</button>
+            <button className="bg-orange-500 text-white rounded-full px-5 py-2 font-bold hover:bg-orange-800 transiton-color duration-300">
+              Rent this van
+            </button>
           </div>
         </div>
       )}

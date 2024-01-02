@@ -21,15 +21,18 @@ const Vans = () => {
     <div className="max-w-[1000px] mx-auto flex flex-wrap justify-evenly my-3 gap-3">
       {vans.length === 0 ? (
         <div className="min-h-screen flex justify-center items-center">
-          <h1 className=" text-2xl font bold ">
-            Loading...
-          </h1>
+          <h1 className=" text-2xl font bold ">Loading...</h1>
         </div>
       ) : (
         vans.map((van) => (
           <Link to={`/vans/${van.id}`}>
-            <div  className="">
-              <Card image={van.imageUrl} name={van.name} price={van.price}  type={van.type}/>
+            <div className="">
+              <Card
+                image={van.imageUrl}
+                name={van.name}
+                price={van.price}
+                type={van.type}
+              />
             </div>
           </Link>
         ))
