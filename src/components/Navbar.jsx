@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           </Link>
         </div>
         {/* " text-black hover:text-gray-700 font-semibold" */}
-        <div className="flex gap-4 text-xl">
+        <div className="flex gap-4 text-xl items-center ">
           <NavLink
             to="/host"
             className={({ isActive }) =>
@@ -41,6 +42,16 @@ const Navbar = () => {
             }
           >
             <h2>Vans</h2>
+          </NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive
+                ? "hover:text-orange-600 text-orange-600 font-bold transition-color duration-200"
+                : " text-orange-900 hover:text-orange-600 font-semibold transition-color duration-200"
+            }
+          >
+              <CgProfile />
           </NavLink>
         </div>
       </div>

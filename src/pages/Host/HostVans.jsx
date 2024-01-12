@@ -29,7 +29,7 @@ const HostVans = () => {
           </h1>
           {console.log(vans)}
           {vans.map((van) => (
-            <Link key={van.id} to={`/host/vans/${van.id}`}>
+            <Link key={van.id} to={`${van.id}`}>
               <HostVan
                 name={van.name}
                 price={van.price}
