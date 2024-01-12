@@ -20,7 +20,7 @@ const HostVansDetails = () => {
   return (
     <div>
       {currentVan.length === 0 ? (
-        <div>Loading</div>
+        <div className="max-w-[1000px] mx-auto min-h-screen text-center flex justify-center items-center text-2xl">Loading...</div>
       ) : (
         <div className="">
           <div className="max-w-[1000px] mx-auto ">
@@ -42,7 +42,6 @@ const HostVansDetails = () => {
                 <h1 className="text-3xl font-bold">{currentVan.name}</h1>
                 <h2 className="text-xl font-bold">{currentVan.price}$ / day</h2>
               </div>
-              {console.log(currentVan)}
             </div>
           </div>
         </div>
